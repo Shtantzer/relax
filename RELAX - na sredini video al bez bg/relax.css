@@ -1,0 +1,56 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#jezikDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+#contentDiv {
+    margin: 0px;
+    padding: 0px;
+}
+
+#videoDiv {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+#overlayVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the screen */
+    z-index: 1000; /* Ensure the video is above other content */
+    display: none; /* Initially hide the video */
+
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 50px;   
+    display: block;
+    text-align: center;
+    transition: font-size 0.5s ease;
+}
