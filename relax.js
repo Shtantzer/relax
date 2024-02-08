@@ -18,7 +18,7 @@ gumbJezika.addEventListener('click', function() {
     const paragraf = document.createElement('p');
     paragraf.textContent = "Ovo je vodič za trenutno opuštanje tijela i prelazak uma u prirodnu ekstazu mira. \r\n";
     paragraf.textContent += "\r\n";
-    paragraf.textContent += "Pritisni dolje za početak:";
+    paragraf.textContent += "Povećajte glasnoću 🔊 te pritisnite dolje za početak:";
   
 
 
@@ -70,16 +70,10 @@ function startCountdown(paragraf, gumbZapocni, contentDiv) {
         jumpscare.autoplay = true;
         jumpscare.loop = true;
 
-    
+        openFullscreen();
 
         videoDiv.appendChild(jumpscare);
         overlayVideo.style.display = "block";
-        
-
-        
-
-        openFullscreen();
-
     }
 }, 1000);
 
